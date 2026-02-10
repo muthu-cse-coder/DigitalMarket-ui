@@ -1,0 +1,197 @@
+/* ===== INPUT COMPONENT STYLES ===== */
+
+.input-component {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== LABEL ===== */
+
+.input-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-required {
+  color: #ef4444;
+  margin-left: 0.25rem;
+}
+
+/* ===== INPUT CONTAINER ===== */
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+/* ===== INPUT FIELD ===== */
+
+.input-field {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.75rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: #94a3b8;
+}
+
+.input-field:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+/* Input with Icon */
+.input-with-icon {
+  padding-left: 3rem;
+}
+
+/* ===== INPUT ICON ===== */
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 1.25rem;
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+
+.input-focused + .input-icon,
+.input-field:focus + .input-icon {
+  color: #667eea;
+}
+
+/* ===== TEXTAREA ===== */
+
+.textarea-field {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+/* ===== SELECT ===== */
+
+.select-field {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.25rem;
+  padding-right: 3rem;
+}
+
+.select-field:focus {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+/* ===== INPUT STATES ===== */
+
+/* Error State */
+.input-error {
+  border-color: #ef4444;
+}
+
+.input-error:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
+}
+
+.input-error-message {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #ef4444;
+  font-weight: 500;
+}
+
+/* Disabled State */
+.input-disabled {
+  background-color: #f1f5f9;
+  color: #94a3b8;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.input-disabled:focus {
+  border-color: #e2e8f0;
+  box-shadow: none;
+}
+
+/* Focused State */
+.input-focused {
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+/* ===== HOVER EFFECTS ===== */
+
+.input-field:hover:not(.input-disabled) {
+  border-color: #cbd5e1;
+}
+
+.select-field:hover:not(.input-disabled) {
+  border-color: #cbd5e1;
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.input-error {
+  animation: shake 0.5s ease;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .input-field {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.95rem;
+  }
+
+  .input-with-icon {
+    padding-left: 2.75rem;
+  }
+
+  .input-icon {
+    left: 0.875rem;
+    font-size: 1.1rem;
+  }
+
+  .textarea-field {
+    min-height: 100px;
+  }
+
+  .input-label {
+    font-size: 0.9rem;
+  }
+
+  .input-error-message {
+    font-size: 0.8rem;
+  }
+}

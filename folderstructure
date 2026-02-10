@@ -1,0 +1,99 @@
+digital-marketing-agency/
+│
+├── public/
+│   ├── favicon.ico
+│   └── index.html
+│
+├── src/
+│   ├── assets/                      # எல்லா static files இங்கே
+│   │   ├── images/
+│   │   │   ├── logo.png
+│   │   │   ├── hero/
+│   │   │   ├── services/
+│   │   │   ├── portfolio/
+│   │   │   └── testimonials/
+│   │   ├── icons/
+│   │   └── fonts/
+│   │
+│   ├── components/                  # Reusable UI components
+│   │   ├── common/
+│   │   │   ├── Button/
+│   │   │   │   ├── Button.jsx
+│   │   │   │   └── Button.module.css
+│   │   │   ├── Card/
+│   │   │   ├── Input/
+│   │   │   ├── Modal/
+│   │   │   └── Loader/
+│   │   │
+│   │   ├── sections/               # Page sections
+│   │   │   ├── Hero/
+│   │   │   ├── Services/
+│   │   │   ├── Portfolio/
+│   │   │   ├── Testimonials/
+│   │   │   ├── ContactForm/
+│   │   │   ├── Stats/
+│   │   │   └── CTA/
+│   │   │
+│   │   └── ui/                     # Specific UI elements
+│   │       ├── AnimatedText/
+│   │       ├── ParallaxSection/
+│   │       ├── ScrollReveal/
+│   │       └── GradientBackground/
+│   │
+│   ├── layouts/                    # Layout components
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Navbar.module.css
+│   │   ├── Footer/
+│   │   ├── MainLayout/
+│   │   └── PageTransition/
+│   │
+│   ├── pages/                      # Route-based pages
+│   │   ├── Home/
+│   │   │   ├── Home.jsx
+│   │   │   └── Home.module.css
+│   │   ├── About/
+│   │   ├── Services/
+│   │   ├── Portfolio/
+│   │   ├── Testimonials/
+│   │   └── Contact/
+│   │
+│   ├── animations/                 # Animation configurations
+│   │   ├── variants.js            # Framer Motion variants
+│   │   ├── transitions.js
+│   │   ├── scrollAnimations.js
+│   │   └── pageTransitions.js
+│   │
+│   ├── hooks/                      # Custom React hooks
+│   │   ├── useScrollAnimation.js
+│   │   ├── useIntersectionObserver.js
+│   │   ├── useMediaQuery.js
+│   │   └── usePageTransition.js
+│   │
+│   ├── utils/                      # Utility functions
+│   │   ├── helpers.js
+│   │   ├── validation.js
+│   │   └── constants.js
+│   │
+│   ├── styles/                     # Global styles & theme
+│   │   ├── globals.css
+│   │   ├── variables.css
+│   │   ├── theme.js
+│   │   └── mixins.scss
+│   │
+│   ├── routes/                     # Routing configuration
+│   │   └── AppRoutes.jsx
+│   │
+│   ├── context/                    # React Context (if needed)
+│   │   └── ThemeContext.jsx
+│   │
+│   ├── App.jsx                     # Main App component
+│   ├── App.css
+│   └── main.jsx                    # Entry point
+│
+├── .gitignore
+├── package.json
+├── vite.config.js                  # or craco.config.js for CRA
+├── tailwind.config.js
+├── postcss.config.js
+└── README.md
